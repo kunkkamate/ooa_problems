@@ -45,8 +45,6 @@ int main(int argc, char* argv[]) {
     auto start = chrono::steady_clock::now();
 
     do {
-        if (perm[0] > perm[n - 1]) continue;
-
         double len = 0.0;
         for (int i = 0; i + 1 < n; i++)
             len += d[perm[i]][perm[i + 1]];
